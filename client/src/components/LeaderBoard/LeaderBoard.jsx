@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './Leaderboard.css';
+import './LeaderBoard.css';
 
 function Leaderboard() {
   const [leaderboard, setLeaderboard] = useState([]);
