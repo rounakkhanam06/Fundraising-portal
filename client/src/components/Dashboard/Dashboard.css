@@ -1,0 +1,152 @@
+.dashboard-container {
+  max-width: 900px;
+  margin: 80px auto 40px auto; 
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.dashboard-container h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #2d2d2d;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.info-cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-card {
+  background: #faf9ff;
+  border: 1.5px solid #d6c9fa;
+  border-radius: 12px;
+  flex: 1 1 250px;
+  padding: 25px 30px;
+  box-shadow: 0 4px 12px rgba(74, 24, 165, 0.1);
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+}
+.info-card:hover {
+  box-shadow: 0 6px 20px rgba(74, 24, 165, 0.3);
+}
+
+.info-card h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #4a18a5;
+  border-bottom: 2px solid #4a18a5;
+  padding-bottom: 6px;
+  letter-spacing: 0.8px;
+}
+.info-card p {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.rewards-section {
+  margin-top: 40px;
+  padding: 20px 25px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e2d9fa;
+  box-shadow: 0 4px 14px rgba(74, 24, 165, 0.05);
+}
+.rewards-section h2 {
+  font-weight: 700;
+  color: #4a18a5;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+.rewards-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.rewards-section ul li {
+  font-size: 1.1rem;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+.rewards-section ul li:last-child {
+  border-bottom: none;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .dashboard-container {
+    margin: 80px 20px 30px;
+    padding: 20px;
+  }
+  .dashboard-container h1 {
+    font-size: 2rem;
+  }
+  .info-card h2 {
+    font-size: 1.3rem;
+  }
+  .info-card p {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    margin: 90px 15px 40px; 
+    padding: 15px 20px;
+  }
+  .info-cards {
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+  .info-card {
+    flex: 1 1 200px;
+    padding: 20px;
+  }
+  .dashboard-container h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-container {
+    margin: 80px 10px 30px;
+    padding: 15px 20px;
+  }
+  .info-cards {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+  .info-card h2 {
+    font-size: 1.2rem;
+  }
+  .info-card p {
+    font-size: 1.5rem;
+  }
+  .rewards-section h2 {
+    font-size: 1.5rem;
+  }
+  .rewards-section ul li {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .dashboard-container {
+    margin: 80px 10px 30px; 
+  }
+}
+
+

@@ -1,0 +1,42 @@
+.leaderboard {
+  max-width: 800px;
+  margin: 80px auto 40px auto;
+  
+  padding: 20px;
+  background: #ffffff;
+   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+
+  border-radius: 8px;
+  text-align: center;
+
+}
+
+
+.leaderboard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.leaderboard th,
+.leaderboard td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.leaderboard th {
+  background: #6d42bc;
+  color: white;
+  font-weight: 600;
+}
+
+.leaderboard tr:hover {
+  background: #f5f5f5;
+}
+
+.leaderboard tr:first-child td {
+  font-weight: bold;
+  color: #4a18a5;
+}
